@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Earth Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">SPACE<span>EDU</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="cta-btn">Get Started</button>
+    </header>
+
+    <!-- 3D Canvas Background -->
+    <div id="canvas-container"></div>
+
+    <!-- Scrollable Content Sections -->
+    <main>
+        <section class="section hero">
+            <div class="content">
+                <h1 class="gsap-reveal">DISCOVER<br>THE EARTH</h1>
+                <p class="gsap-reveal">Explore our beautiful planet through an immersive 3D experience. Witness the beauty of the pale blue dot like never before.</p>
+                <button class="gsap-reveal primary-btn">Start Exploring</button>
+            </div>
+        </section>
+
+        <section class="section about">
+            <div class="content right">
+                <h2 class="gsap-reveal">OUR HOME</h2>
+                <p class="gsap-reveal">Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land consisting of continents and islands.</p>
+                <div class="stats gsap-reveal">
+                    <div class="stat">
+                        <h3>4.54</h3>
+                        <span>Billion Years Old</span>
+                    </div>
+                    <div class="stat">
+                        <h3>149.6</h3>
+                        <span>Million km to Sun</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section features">
+            <div class="content left">
+                <h2 class="gsap-reveal">DYNAMIC BIOSPHERE</h2>
+                <p class="gsap-reveal">The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater.</p>
+            </div>
+        </section>
+
+        <section class="section footer-section">
+            <div class="content center">
+                <h2 class="gsap-reveal">READY TO LEARN?</h2>
+                <p class="gsap-reveal">Join thousands of students exploring the universe with SpaceEdu.</p>
+                <button class="gsap-reveal primary-btn">Join Now</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Main Script -->
+    <script src="main.js"></script>
+</body>
+</html>
